@@ -1,0 +1,112 @@
+/* global */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#main-section {
+    width : 100%;
+    margin : auto;
+    padding: 10px;
+}
+
+/* for the border at the bottom */
+/* border-bottom: 1px grey solid; */
+/* #line {
+    border-bottom: 1px grey solid;
+} */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+p {
+    text-decoration: none;
+    color: #5a5a5a;
+    cursor: pointer;
+    line-height: 140%;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* needed vertical align to move everything 
+within the inline to flow to the top (vertically) */
+#main-section > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.border-top {
+    border-top: 1px #ffffff solid;
+    margin: 3px 0 12px 0;
+}
+
+/* left section */
+#left-section {
+    width: 590px;
+    padding: 10px;
+
+}
+#left-section-hover-zoom {
+    overflow: hidden;
+}
+
+#left-section img {
+    width: 100%;
+    transition: all .5s ease;
+}
+
+#left-section img:hover {
+    transform: scale(1.1);
+}
+
+#left-content a {
+    font-size: 31px;
+}
+
+#left-content a:hover {
+    color: green;
+}
+
+/* middle section */
+#middle-section {
+    width: 270px;
+    padding: 10px;
+
+}
+
+.middle-content a {
+    font-size: 19px;
+}
+
+/* right section  */
+#right-section {
+    width: 310px;
+    padding: 10px;
+    border-left: 1px grey solid;
+}
+
+.right-content a {
+    font-size: 21px;
+}
+
+.inline-row {
+    display: inline-block;
+}
+
+.inline-row p {
+    float: right;
+    
+}
+
+.inline-row img {
+    float: right;
+    padding-right: 10px;
+}
