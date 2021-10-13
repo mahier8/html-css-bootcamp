@@ -1,0 +1,229 @@
+@font-face{
+    font-family: 'BallparkWeiner';
+    src: url('../fonts/ballpark.eot');
+    src: url('../fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ballpark.woff') format('woff'),
+         url('../fonts/ballpark.ttf') format('truetype'),
+         url('../fonts/ballpark.svg#ballpark') format('svg');
+}
+
+@font-face{
+    font-family: 'dayrom';
+    src: url('../fonts/dayrom.eot');
+    src: url('../fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dayrom.woff') format('woff'),
+         url('../fonts/dayrom.ttf') format('truetype'),
+         url('../fonts/dayrom.svg#dayrom') format('svg');
+}
+
+/* global */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/fond_jaune.png');
+}
+
+#main-section {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2 {
+    color: rgb(98, 98, 98);
+}
+
+p {
+    color: rgb(98, 98, 98);
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background: url('../images/separateur.png') repeat-x bottom;
+    align-items: flex-end;
+}
+
+header h3 {
+    font-family: 'dayrom', sans-serif;
+}
+
+#logo-container {
+    display: flex;
+    align-items: flex-start;
+}
+#logo-container > h1 {
+    font-family: 'BallparkWeiner', sans-serif;
+}
+
+
+header h1{
+    margin-bottom: 0;
+    color: black;
+}
+
+header h3 {
+    margin-top: 0;
+    color: rgb(98, 98, 98);
+}
+
+nav {
+    width: 40%;
+    height: 66px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+}
+
+nav li:hover {
+    color: rgb(109, 15, 15);
+    border-bottom: 3px solid rgb(109, 15, 15);
+    cursor: pointer;
+}
+
+/* image */
+#image-container {
+    position: relative;
+}
+
+#image-container>img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+
+/* image-overlay */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background-color: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  /* opacity:1; */
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}   
+
+.overlay p {
+    color: white;
+    margin-left: 15px;
+}
+
+.overlay button {
+    background: linear-gradient(#8a6060, #6e1b1b);
+    color: white;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+/* could not get this to work */
+button{
+    width: 95px; 
+    height: 40px;
+    margin: auto;
+}
+
+button #right-arrow{
+    width: 7px;
+    height: 11px;
+}
+
+/* content */
+#content-section {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#content-title {
+    display: flex;
+    padding: 0 10px 0 10px;
+}
+
+#content-title h1 {
+    margin-left: 10px;
+}
+
+article {
+    width: 75%;
+    padding-right: 15px;
+}
+
+article #paragraph-link {
+    color: red;
+}
+
+aside {
+    width: 25%;
+    padding: 10px;
+    position: relative;
+}
+
+#grey-arrow {
+    position: absolute;
+    top: 100px;
+    left: -11px;
+}
+
+#aside-section {
+    background-color: rgb(100, 100, 100);
+    border-radius: 8px;
+}
+
+#aside-section p {
+    color: rgb(194, 194, 194);
+}
+
+#aside-section h1 {
+    color: rgb(194, 194, 194);
+}
+
+#image-donkey {
+    display: flex;
+    justify-content: center;
+}
+
+#image-icons {
+    display: flex;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background:  url('../images/ico_top.png') no-repeat  top center, url('../images/separateur.png') repeat-x top ;
+    padding-top: 20px;
+}
+
+footer #up-arrow {
+    height: 20%;
+}
+
+#footer-card3 {
+    width: 22%;
+}
+#column-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.column {
+    padding : 0;
+}
+
+.column li {
+    color: red;
+    list-style: none;
+}
