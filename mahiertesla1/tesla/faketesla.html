@@ -33,8 +33,13 @@
               <li>Shop</li>
               <li>Account</li>
               <!-- This is where the sub menu goes -->
-              <li>
-                <span class="hovertrigger">Menu</span>
+              <li class="hovertrigger">
+                <!-- The key to the step of making the sidebar
+                hover over the rest of the page is to add
+                the z-index 2 in the hover function and then
+                make sure thast the class hovertrigger goes 
+                within li rather than the span   -->
+                <span >Menu</span>
                 <div class="hoverwrapper">This is the submenu for One.</div>
               </li>
             </ol>

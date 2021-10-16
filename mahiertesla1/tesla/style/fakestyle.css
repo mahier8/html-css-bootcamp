@@ -27,9 +27,9 @@ section {
 
 /* I tried to add in the z-index but the 
 menu kept bouncing off the menu li  */
-.hovertrigger:hover + .hoverwrapper {
+.hovertrigger:hover .hoverwrapper {
   right: 0;
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 /* global */
@@ -166,7 +166,7 @@ span:hover {
 #icon-div {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 5px;
 }
 
 @keyframes bounce {

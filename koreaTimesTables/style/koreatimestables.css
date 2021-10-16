@@ -1,0 +1,52 @@
+/* global */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main-section {
+    width : 100%;
+    margin : auto;
+    padding: 10px;
+}
+
+/* left section */
+#left-section {
+    width: 590px;
+    padding: 10px;
+
+}
+#left-section-hover-zoom {
+    overflow: hidden;
+}
+
+#left-section img {
+    width: 100%;
+    transition: all .5s ease;
+}
+
+#left-section img:hover {
+    transform: scale(1.1);
+}
+
+#left-content a {
+    font-size: 31px;
+}
+
+#left-content a:hover {
+    color: green;
+}
+
+/* middle section */
+#middle-section {
+    background-color: blue;
+}
+
+.middle-content a {
+    font-size: 19px;
+}
+
+/* tables */
+td {
+    border : 1px solid black;
+}
