@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <script src="https://kit.fontawesome.com/31aef5507f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body id="main-section">
+
+    <!-- header -->
+    <header>
+        <div>
+            <div id="logo-container">
+                <img src="../donkeyPage/images/zozor_logo.png" alt="">
+                <h1>ZORO</h1>
+            </div>
+            
+            <h3>Carnets De Voyage</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../donkeyPage/donkeypage.html">HOME</a></li>
+                <li>BLOG</li>
+                <li>CV</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <section id="content-section">
+        <!-- form section -->
+        <article>
+                <form method="post" action="treatment.php">
+                    <fieldset>
+                        <p>Contact Zorzor Normal Form</p>
+                        <p>Personal Details</p>
+                        <p>
+                            <label for="">Name :</label>
+                            <input type="text" autofocus required>
+                        </p>
+                        <div id="gender-select">
+                            <p>
+                                <label for="">Gender :</label>
+                                <input type="radio" name="gender" value="woman" id="">
+                                <i class="fas fa-venus"></i>
+                                <input type="radio" name="gender" value="man-25" id="">
+                                <i class="fas fa-mars"></i>
+                            </p>
+                        </div>
+                        <div id="mail">
+                            <p>
+                                <label for="">Mail adress :</label>
+                                <input type="mail" >
+                                <select name="mail_company">
+                                    <option value="france">@gmail</option>
+                                    <option value="spain">@hotmail</option>
+                                    <option value="italia">@yahoomail</option>
+                                </select>
+                                <span>.com</span>
+                            </p>
+                        </div>
+                        <div class="object-select">
+                            <p>
+                                <label for="improve">Object</label>
+                                <textarea name="improve" id="improve" ></textarea>
+                            </p>
+                        </div>
+                        <p>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="10" maxlength="300" placeholder="Maximum 3000 characters"></textarea>
+                        </p>
+                        <div>
+                            <input type="submit" value="send">
+                        </div>
+                    </fieldset>
+                </form>
+        </article>
+        <aside id="aside-section">
+            <img id="grey-arrow" src="../donkeyPage/images/bulle.png" alt="">
+            <h1>A PROPOSE DE L'ATEUER</h1>
+            <div id="image-donkey">
+                <img src="../donkeyPage/images/zozor_classe.png" alt="">
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="image-icons">
+                <img src="../donkeyPage/images/facebook.png" alt="">
+                <img src="../donkeyPage/images/twitter.png" alt="">
+                <img src="../donkeyPage/images/vimeo.png" alt="">
+                <img src="../donkeyPage/images/flickr.png" alt="">
+                <img src="../donkeyPage/images/rss.png" alt="">
+            </div>
+        </aside>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <!-- <div id="arrow-image">
+            <img id="up-arrow" src="./images/ico_top.png" alt="">
+        </div> -->
+        <div id="footer-card1">
+            <h2>MON DERNIER TWEET</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+        <div id="footer-card2">
+            <h2>MES PHOTOS</h2>
+            <img src="../donkeyPage/images/photo1.jpg" alt="">
+            <img src="../donkeyPage/images/photo2.jpg" alt="">
+            <img src="../donkeyPage/images/photo3.jpg" alt="">
+            <img src="../donkeyPage/images/photo4.jpg" alt="">
+        </div>
+        <div id="footer-card3">
+            <h2>MES AMIS</h2>
+            <div id="column-row">
+                <ul class="column">
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                </ul>
+                <ul class="column">
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                    <li><img src="../donkeyPage/images/ico_liensexterne.png" alt="">Lorem Ipsum</li>
+                </ul>    
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

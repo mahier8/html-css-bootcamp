@@ -1,0 +1,137 @@
+/* @font-face{
+    font-family: 'Ephesis';
+    src: 
+         url('./') format('truetype'),
+} */
+
+/* div containers  */
+
+body > div {
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#story1-page {
+    background-color: rgb(223, 173, 164);
+    
+}
+
+#story2-page {
+    background-color: rgb(164, 223, 205);
+
+}
+
+#story3-page {
+    background-color: rgb(164, 165, 223);
+}
+
+/* headings */
+
+h1 {
+    color:white;
+    border-bottom: 1px solid white;
+}
+
+/* image */
+
+img {
+    border-radius: 10px;
+}
+
+/* paragraphs */
+
+.paragraph, .link-font {
+    font-family: 'Ephesis', cursive;
+    font-size: 1.3rem;
+}
+
+div #story2-paragraph {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.paragraph-div {
+    background-color: white;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#story3-paragraph {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+/* links and icons */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.story2-icons {
+    color: white;
+    font-size: 2rem;
+}
+
+.story2-icons:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+#story3-icon-back {
+    color: white;
+    font-size: 2rem;
+}
+
+#story3-icon-home {
+    font-size: 2rem;
+}
+
+#story3-icon-back:hover {
+    color: black;
+}
+
+#story3-icon-home:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* {
+    font-family: 'Ephesis', cursive;
+} */
+
+/* #bolder {
+    font-weight: bold;
+} */
+
+/* ul li {
+    li in the ul
+}
+
+ul > li {
+    children
+}
+
+ul + div {
+    sibling
+} */
+
+/* ul ~ div {
+    second sibling (all at same postion in tree)
+} */
+
+/* .mytest {
+    background-color: hotpink;
+}
+
+div {
+    background-color: blue;
+} */

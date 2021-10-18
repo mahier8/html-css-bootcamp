@@ -20,18 +20,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/fond_jaune.png');
+    background-image: url('../../donkeyPage/images/fond_jaune.png');
 }
 
 #main-section {
     width: 80%;
     margin: auto;
-}
-
-@media all and (max-width:1024px) {
-    #main-section {
-        width :auto;
-    }
 }
 
 h1, h2 {
@@ -42,21 +36,12 @@ p {
     color: rgb(98, 98, 98);
 }
 
-a {
-    text-decoration: none;
-    color: rgb(98, 98, 98);
-}
-
-a:hover {
-    color: rgb(109, 15, 15);
-}
-
 /* header */
 header {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    background: url('../images/separateur.png') repeat-x bottom;
+    background: url('../../donkeyPage/images/separateur.png') repeat-x bottom;
     align-items: flex-end;
 }
 
@@ -88,14 +73,6 @@ nav {
     height: 66px;
 }
 
-@media all and (max-width:1024px) {
-    nav {
-        width :auto;
-        text-align: left;
-        height: auto;
-    }
-}
-
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -105,92 +82,10 @@ nav ul {
     color: rgb(98, 98, 98);
 }
 
-@media all and (max-width:1024px) {
-    nav ul {
-        flex-direction: column;
-    }
-}
-
-@media all and (max-width:1024px) {
-    nav li {
-        padding-left: 4px;
-        font-size: 1.1em;
-    }
-}
-
-/* @media all and (max-with:1024px) {
-    nav a {
-        
-    }
-} */
-
-
 nav li:hover {
     color: rgb(109, 15, 15);
     border-bottom: 3px solid rgb(109, 15, 15);
     cursor: pointer;
-}
-
-@media all and (max-width:1024px) {
-    nav li:hover {
-        border-bottom: 0;
-    }
-}
-
-/* image */
-#image-container {
-    position: relative;
-}
-
-#image-container>img {
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 8px;
-    display: flex;
-}
-
-@media all and (max-width:1024px) {
-    #image-container {
-        display: none;
-    }
-}
-
-/* image-overlay */
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background-color: rgba(0, 0, 0, 0.5); /* Black see-through */
-  width: 100%;
-  /* opacity:1; */
-  color: white;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-}   
-
-.overlay p {
-    color: white;
-    margin-left: 15px;
-}
-
-.overlay button {
-    background: linear-gradient(#8a6060, #6e1b1b);
-    color: white;
-    border-radius: 8px;
-    margin-right: 15px;
-}
-
-/* could not get this to work */
-button{
-    width: 95px; 
-    height: 40px;
-    margin: auto;
-}
-
-button #right-arrow{
-    width: 7px;
-    height: 11px;
 }
 
 /* content */
@@ -252,36 +147,11 @@ aside {
     display: flex;
 }
 
-@media all and (max-width:1024px) {
-    section {
-        flex-direction: column;
-    }
-    article, aside {
-        width :auto;
-        margin-bottom: 15px;
-    }
-    aside {
-        text-align: center;
-    }
-    #grey-arrow {
-        display: none;
-    }
-
-    #image-donkey img {
-        width: 110px;
-        float: right;
-        margin-left: 15px;
-    }
-    aside p:last-child {
-        text-align: center;
-    }
-}
-
 /* footer */
 footer {
     display: flex;
     justify-content: space-around;
-    background:  url('../images/ico_top.png') no-repeat  top center, url('../images/separateur.png') repeat-x top ;
+    background:  url('../../donkeyPage/images/ico_top.png') no-repeat  top center, url('../images/separateur.png') repeat-x top ;
     padding-top: 20px;
 }
 
@@ -297,6 +167,7 @@ footer #up-arrow {
     justify-content: space-between;
     width: 100%;
     padding: 0;
+    padding-bottom: 10px
 }
 
 .column {
@@ -322,4 +193,32 @@ th {
 
 .table-row {
     background-color: #dfc598;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding: 10px;
+}
+
+form p {
+    color: black;
+}
+
+#address-select {
+    display: flex;
+    flex-direction: row;
+}
+
+:required {
+    border: 1px solid red;
+}
+
+label {
+    display: inline-block;
+    vertical-align: top;
 }
